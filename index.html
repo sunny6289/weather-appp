@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="main">
+        <div id="app">
+            <h1>Weather App</h1>
+            <input type="text" name="" placeholder="Enter City Name" id="city-name">
+            <p class="msg"></p>
+            <button class="search btn">Get Weather</button>
+        </div>
+        <div id="weather-details">
+            <div id="city-name-icon">
+                <h1 class="weather-city"></h1>
+                <img src="" alt="" class="weather-img">
+            </div>
+            <div class="temp-container">
+                <h3>Tempareture</h3>
+                <div class="temp"></div>
+                <h3>Feels like</h3>
+                <div class="feels-like"></div>
+            </div>
+            <div class="hum-wind">
+                <div class="hum">
+                    <i class="fa-solid fa-droplet drop"></i>
+                    <p class="hum-val"></p>
+                </div>
+                <div class="wind">
+                    <i class="fa-solid fa-wind wind"></i>
+                    <p class="wind-val"></p>
+                </div>
+            </div>
+            <button class="back-btn btn">Go Back</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

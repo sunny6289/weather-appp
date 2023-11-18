@@ -34,3 +34,11 @@ let callApi = async (city)=>{
     humidity.innerHTML = `${data.current.humidity}%`;
     wind.innerHTML = `${data.current.wind_kph}km/hr`;
 }
+
+backBtn.addEventListener("click",()=>{
+    app.style.zIndex = 1;
+    app.style.opacity = 1;
+    weatherDetails.style.opacity = 0;
+    weatherDetails.style.zIndex = -1;
+    cityName.value = "";
+})
